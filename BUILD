@@ -5,3 +5,9 @@ java_library(
     srcs = glob(["ri/src/main/java/**/*.java"]),
     visibility = ["//visibility:public"],
 )
+
+java_library(
+    name = "jsr305-neverlink",
+    exports = [":jsr305"],
+    neverlink = True,
+)
