@@ -55,6 +55,11 @@ java_library_static {
     srcs: ["ri/src/main/java/**/*.java"],
     // b/267831518: Pin tradefed and dependencies to Java 11.
     java_version: "11",
+    target: {
+        windows: {
+            enabled: true,
+        },
+    },
 }
 
 // Compatibility name
