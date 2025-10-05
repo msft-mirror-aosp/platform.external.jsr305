@@ -44,6 +44,7 @@ license {
 
 java_library_static {
     name: "jsr305",
+    defaults: ["error_prone_dependency_defaults"],
     host_supported: true,
     hostdex: true,
     sdk_version: "core_current",
