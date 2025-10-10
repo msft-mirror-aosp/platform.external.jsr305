@@ -62,9 +62,3 @@ java_library_static {
         },
     },
 }
-
-// Compatibility name
-java_library_host {
-    name: "jsr305lib",
-    static_libs: ["jsr305"],
-}
